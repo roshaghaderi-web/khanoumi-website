@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/out.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section class="w-full h-[40px] ">
+        <img class="object-cover h-full" src="img/navbar.jpeg" alt="">
+    </section>
+    <!-- navbar end -->
+    <section class="w-full ">
+        <header
+            class=" flex px-3 border border-2 border-gray-400/10 h-[65px] fixed top-[40px] left-0 w-full bg-white z-10 ">
+            <div class="w-1/2 row items-center *:"><i class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em" fill="none" viewBox="0 0 24 24" class="h-6 w-6 text-text-black"
+                        data-sentry-element="svg" data-sentry-source-file="ShoppingCart.tsx"
+                        data-sentry-component="SvgShoppingCart">
+                        <path fill="currentColor"
+                            d="M18.19 17.75H7.54c-.99 0-1.94-.42-2.61-1.15A3.57 3.57 0 0 1 4 13.9l.83-9.96c.03-.31-.08-.61-.29-.84s-.5-.35-.81-.35H2c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h1.74c.73 0 1.42.31 1.91.84.27.3.47.65.58 1.04h12.49c1.01 0 1.94.4 2.62 1.12.67.73 1.01 1.68.93 2.69l-.54 7.5c-.11 1.83-1.71 3.31-3.54 3.31M6.28 4.62l-.78 9.4c-.05.58.14 1.13.53 1.56s.93.66 1.51.66h10.65c1.04 0 1.98-.88 2.06-1.92l.54-7.5a2.04 2.04 0 0 0-2.06-2.21H6.28zM16.25 22.75c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m0-2.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5M8.25 22.75c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m0-2.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5"
+                            data-sentry-element="path" data-sentry-source-file="ShoppingCart.tsx"></path>
+                        <path fill="currentColor"
+                            d="M21 8.75H9c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h12c.41 0 .75.34.75.75s-.34.75-.75.75"
+                            data-sentry-element="path" data-sentry-source-file="ShoppingCart.tsx"></path>
+                    </svg>
+                </i>
+                <button class="btnheader flex justify-center items-center text-[20px] ml-3.5 "><a
+                        class="flex items-center" href="">ورود <i class="ml-1.5"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em" fill="none" viewBox="0 0 24 24" class="h-6 w-6"
+                                data-sentry-element="svg" data-sentry-component="SvgLogin"
+                                data-sentry-source-file="Login.tsx">
+                                <path fill="currentColor"
+                                    d="M15.24 22.27h-.13c-4.44 0-6.58-1.75-6.95-5.67-.04-.41.26-.78.68-.82.41-.04.78.27.82.68.29 3.14 1.77 4.31 5.46 4.31h.13c4.07 0 5.51-1.44 5.51-5.51V8.74c0-4.07-1.44-5.51-5.51-5.51h-.13c-3.71 0-5.19 1.19-5.46 4.39-.05.41-.39.72-.82.68a.75.75 0 0 1-.69-.81c.34-3.98 2.49-5.76 6.96-5.76h.13c4.91 0 7.01 2.1 7.01 7.01v6.52c0 4.91-2.1 7.01-7.01 7.01"
+                                    data-sentry-element="path" data-sentry-source-file="Login.tsx"></path>
+                                <path fill="currentColor"
+                                    d="M14.88 12.75H2c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h12.88a.749.749 0 1 1 0 1.5"
+                                    data-sentry-element="path" data-sentry-source-file="Login.tsx"></path>
+                                <path fill="currentColor"
+                                    d="M12.65 16.1c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06L14.94 12l-2.82-2.82a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l3.35 3.35c.29.29.29.77 0 1.06l-3.35 3.35c-.15.15-.34.22-.53.22"
+                                    data-sentry-element="path" data-sentry-source-file="Login.tsx"></path>
+                            </svg></i></a></button>
+                <i class="ml-3.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </i>
+                <form
+                    class="md:w-[200px] md:h-[30px] hidden md:flex rounded-2xl border border-black/20  text-pink-700 md:px-1.5 flex  md:justify-end items-center"
+                    action="">
+                    <input class="outline-0 border-0 text-right px-2.5 " placeholder="جست وجو" type="text">
+                </form>
+            </div>
+            <div class="row justify-between ">
+                <div class="w-1/2   row justify-end items-center">
+                    <img class="w-[80px] h-[50px]" src="img/logo.svg" alt="">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24"
+                            class="h-6 w-6 text-neutral-800" data-sentry-element="svg"
+                            data-sentry-source-file="Menu.tsx" data-sentry-component="SvgMenu">
+                            <path fill="currentColor"
+                                d="M21 7.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h18c.41 0 .75.34.75.75s-.34.75-.75.75M21 12.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h18c.41 0 .75.34.75.75s-.34.75-.75.75M21 17.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h18c.41 0 .75.34.75.75s-.34.75-.75.75"
+                                data-sentry-element="path" data-sentry-source-file="Menu.tsx"></path>
+                        </svg></i>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- end header -->
+    <section class="w-full row px-3 py-16">
+        <a href="" class=" row justify-end gap-1 *:flex *:items-center *:px-1.5 py-2.5 overflow-hidden">
+            <div class="btngray">آبرسان</div>
+            <div class="btngray">ریمل</div>
+            <div class="btngray">برایت مکس</div>
+            <div class="btngray">سیسپرسا</div>
+            <div class="btngray">لافارر</div>
+            <div class="btngray">عطر و ادکلن</div>
+            <div class="btngray">پروتئین وی</div>
+            <div class="btngray">سشوار</div>
+            <div class="btngray">کی 2026 شد؟</div>
+
+        </a>
+        <div class="h-[200px] py-2 md:h-full">
+            <video class="object-cover h-full" autoplay loop muted src="img/Video_260106191630.mp4"></video>
+        </div>
+
+    </section>
+    <section>
+        <div
+            class="row justify-center mb-8 **:text-center **:text-pink-600 md:*:w-[100px] md:*:h-[100px] *:w-[70px] *:h-[70px] gap-7 md:gap-[100px] my-0 *:hover:animate-pulse duration-1000">
+            <a href=""><img class="" src="img/i1.png" alt="">
+                <h2>مراقبت پوست</h2>
+            </a>
+            <a href=""><img src="img/i2.png" alt="">
+                <h2>مکمل</h2>
+            </a>
+            <a href=""><img src="img/i4.png" alt="">
+                <h2>آرایشی</h2>
+            </a>
+            <a href=""><img src="img/i6.png" alt="">
+                <h2>مراقبت مو</h2>
+            </a>
+        </div>
+        <div class="py-10">
+            <div class="flex justify-between  w-[300px] items-center  w-full rounded-[10px]  bg-[#cb2572] h-[250px] ">
+                <div
+                    class="*:w-[120px] *:h-[230px] *:bg-white **:rounded-[4px] flex h-full gap-2 *:hover:opacity-80  px-2 items-center hidden md:flex *:px-1.5 ">
+                    <a href="" class=" *:text-right "><img class="" src="img/1.jpg" alt="">
+                        <h5 class="text-[15px] text-gray-400">رویوال</h5>
+                        <p class="row text-[11px]">فلوئید ضد آفتاب بی رنگ رویوال با SPF50 مناسب پوست چرب </p>
+                        <div class="btnred flex justify-center ">40%</div><span
+                            class="flex justify-start text-[15px] text-gray-900"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 400 120">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                    font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                    تومان
+                                </text>
+                            </svg>
+                            376,080 </span>
+                    </a>
+                    <a href="" class=" *:text-right "><img src="img/2.jpg" alt="">
+                        <h5 class="text-[15px] text-gray-400">دیفکتو</h5>
+                        <p class="row text-[11px]">کانسیلر دیفکتو مدل لاکچری وزن 5 گرم طبیعی و مات مناسب انواع پوست</p>
+                        <div class="btnred flex justify-center ">54%</div><span
+                            class="flex justify-start text-[15px] text-gray-900 mb-[100px]"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                    font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                    تومان
+                                </text>
+                            </svg>
+                            311,420 </span>
+
+
+
+
+                    </a>
+                    <a href="" class=" *:text-right "><img src="img/3.jpg" alt="">
+                        <h5 class="text-[15px] text-gray-400">آدرا</h5>
+                        <p class="row text-[11px]">کرم مرطوب کننده آدرا مدل آرگان 24 ساعته حجم 300 میلی لیتر </p>
+                        <div class="btnred flex justify-center ">40%</div><span
+                            class="flex justify-start text-[15px] text-gray-900"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 400 120">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                    font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                    تومان
+                                </text>
+                            </svg>
+                            228,180 </span>
+                    </a>
+                    <a href="" class=" *:text-right "><img src="img/4.jpg" alt="">
+                        <h5 class="text-[15px] text-gray-400">دافی</h5>
+                        <p class="row text-[11px]">میسلار واتر صورت دافی مناسب پوست چرب و آکنه دار حجم 200 میلی لیتر</p>
+                        <div class="btnred flex justify-center ">6%</div><span
+                            class="flex justify-start text-[15px] text-gray-900"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 400 120">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                    font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                    تومان
+                                </text>
+                            </svg>
+                            129,300 </span>
+                    </a>
+
+                </div>
+                <div class=" flex items-center justify-start md:justify-end md:px-3 text-white text-[15px] p-3 px-1">
+                    <div class="flex items-center justify-center rounded-[3px] w-[20px] h-[20px] text-black bg-white ">5
+                    </div> <span class="text-[20px]">:</span>
+                    <div class="flex items-center justify-center rounded-[3px] w-[20px] h-[20px] text-black bg-white ">
+                        00</div> <span class="text-[20px]">:</span>
+                    <div class=" flex items-center justify-center rounded-[3px] w-[20px] h-[20px] text-black bg-white ">
+                        00</div> <span>بزرگترین حراج امروز تا ساعت</span>
+                    <img class=" w-[100px] h-[100px] animate-bounce  duration-700" src="img/logo2" alt="">
+                    <img class=" w-[130px] h-[30px]" src="img/text" alt="">
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="row  justify-center gap-10">
+            <a href="" class="w-[200px] h-[200px] hover:animate-pulse duration-75"><img src="img/r1.jpeg" alt=""></a>
+            <a href="" class="w-[200px] h-[200px] hover:animate-pulse duration-75"><img src="img/r2.jpeg" alt=""></a>
+            <a href="" class="w-[200px] h-[200px] hover:animate-pulse duration-75"><img src="img/r3.jpeg" alt=""></a>
+            <a href="" class="w-[200px] h-[200px] hover:animate-pulse duration-75"><img src="img/r4.jpeg" alt=""></a>
+
+            <video muted loop autoplay src="img/Video_260107003949.mp4"></video>
+            <div class="row ">
+                <ul class="row *:h-[30px] *:w-1/4 *:justify-center *:flex  *:relative  p-3 *:group ">
+                    <li class="group"><span class="group-hover:opacity-100 underlinemenu"></span><a href="">عطر و
+                            ادکلن</a></li>
+                    <li class="group"><span class=" group-hover:opacity-100 underlinemenu"></span><a href="">دیجیتال</a>
+                    </li>
+                    <li class="group"> <span class="group-hover:opacity-100 underlinemenu"></span><a href=""> لوازم
+                            برقی</a></li>
+                    <li class="group"><span class="  opacity-100 underlinemenu"></span><a href=""> مکمل</a></li>
+                </ul>
+            </div>
+            <div class="mt-[-50px] ">
+                <div class="flex justify-between  w-[300px] items-center  w-full  h-[250px] border-t border-black/10 ">
+                    <div
+                        class="*:w-[120px] *:h-[230px] *:hover:opacity-50  *:bg-white **:rounded-[4px] flex h-full gap-0.5  px-2 items-center *:px-1.5 *:border *:border-black/10 ">
+                        <a href="" class=" *:text-right  "><img class="h-[130px] " src="img/m1.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">یوروویتال</h5>
+                            <p class="row text-[11px]">قرص منتال انرژی یوروویتال بسته 60 عددی</p>
+                            <div class="btnred flex justify-center ">71%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                171,190 </span>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m2.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">یوروویتال</h5>
+                            <p class="row text-[11px]">کپسول Haar Vital یوروویتال بسته 30 عددی
+                            </p>
+                            <div class="btnred flex justify-center ">65%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                105,000 </span>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] w-[180px] " src="img/m3.jpg" alt="">
+                            <div class="  h-[110px] ">
+                                <h5 class="text-[15px]  text-gray-400">دایونیکس فارما
+                                </h5>
+                                <p class="row text-[11px]">شربت خوراکی دایونیکس فارما میل 350 حجم</p>
+                                <div class="btnred flex justify-center ">4%</div><span
+                                    class="flex justify-start text-[15px] text-gray-900 mb-[100px]"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                            font-family="Vazirmatn, IRANSans, Tahoma" font-size="80"
+                                            fill="currentColor">
+                                            تومان
+                                        </text>
+                                    </svg>
+                                    520,000 </span>
+
+
+
+                            </div>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m4.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">یوروویتال</h5>
+                            <p class="row text-[11px]">قرص روی (زینک) یوروویتال مدل Paba بسته 60 عددی
+                            </p>
+                            <div class="btnred flex justify-center ">64%</div><span
+                                class="flex justify-start items-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                101,080 </span>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m5.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">کاله</h5>
+                            <p class="row text-[11px]">پودر وی پروتئین 100% کاله طعم کوکی وزن 1800 گرم
+
+                            </p>
+                            <div class="btnred flex justify-center ">10%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                4,400,000 </span>
+                        </a>
+
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m6.jpg" alt="">
+
+
+                            <h5 class="text-[15px] text-gray-400">هیرتامین</h5>
+                            <p class="row text-[11px]">کپسول هیرتامین ادونس فرمولا بسته 30 عددی
+
+                            </p>
+                            <div class="btnred flex justify-center ">47%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                519,999 </span>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m7.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">یوروویتال</h5>
+                            <p class="row text-[11px]">قرص آسو 300 یوروویتال تعداد 30 عددی
+                            </p>
+                            <div class="btnred flex justify-center ">69%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                55,000 </span>
+                        </a>
+                        <a href="" class=" *:text-right "><img class="h-[130px] " src="img/m8.jpg" alt="">
+                            <h5 class="text-[15px] text-gray-400">اروند فارمد</h5>
+                            <p class="row text-[11px]">قرص فولیکوژن Folicogen اروند فارمد بسته 60 عددی
+                            </p>
+                            <div class="btnred flex justify-center ">49%</div><span
+                                class="flex justify-start text-[15px] text-gray-900"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        font-family="Vazirmatn, IRANSans, Tahoma" font-size="80" fill="currentColor">
+                                        تومان
+                                    </text>
+                                </svg>
+                                537,999 </span>
+                        </a>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <a href="" class="w-[80px] h-[80px] fixed absolute bottom-0 p-3 right-0 z-10 animate-bounce "><img
+                    src="img/fix.png" alt=""></a>
+    </section>
+    <!-- end section -->
+    <section class=" w-full">
+        <a href="">
+            <img class=" w-fit mt-5 px-3 " src="img/f1.jpeg" alt="">
+            <img class=" px-3 py-5" src="img/f2.jpeg" alt="">
+        </a>
+        <div class="row justify-center gap-3 *:rounded-[10px]  *:text-black/10 *:border *:px-2.5 ">
+            <a href="" class="w-[490px] h-[170px] relative">
+                <div class="row justify-between">
+                    <img class="w-[100px] " src="img/h1.png" alt="">
+
+                    <div class="  mt-2.5">
+                        <span class="text-pink-400">بخاطر خودت </span>
+                        <span class="text-black/50">چون،</span>
+                        <span class="text-pink-400"> نظرت </span>
+                        <span class="text-black/50"> مهمه</span>
+                    </div>
+                </div>
+                <div class="row justify-between *:my-1.5">
+                    <img class="w-[130px] h-[110px] absolute right-0" src="img/h2.jpeg" alt="">
+                    <div class=" absolute lg:w-[370px] w-[300px] py-2.5 ">
+                        <span class="text-black/50  flex justify-end text-right py-1">ژل آبرسان آیس بال مدل X5 حاوی
+                            هیالورونیک اسید</span>
+                        <p class="text-black  lg:text-[15px]  text-[12px] text-right">من از این محصول راضی بودم استفاده ازش بهم حس
+                            خوبی میده در واقع جایگزین یخِ و خب آبرسانی هم میکنه پوست رو</p>
+                    </div>
+
+                </div>
+                <div class="absolute flex items-center bottom-0 left-0 text-black text-[18px]"> <svg
+                        class="text-pink-400 w-[49px] h-[49px]" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" fill="none" viewBox="0 0 24 24" class="h-5 w-5 text-primary-main"
+                        data-sentry-element="svg" data-sentry-component="SvgArrowSquareLeft"
+                        data-sentry-source-file="ArrowSquareLeft.tsx">
+                        <path fill="currentColor"
+                            d="M13.26 16.28c-.19 0-.38-.07-.53-.22L9.2 12.53a.754.754 0 0 1 0-1.06l3.53-3.53c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-3 3 3 3c.29.29.29.77 0 1.06a.7.7 0 0 1-.53.22"
+                            data-sentry-element="path" data-sentry-source-file="ArrowSquareLeft.tsx"></path>
+                    </svg>مشاهده</div>
+            </a>
+            <a href="" class="w-[490px] h-[170px] relative">
+                <div class="row justify-between mt-2">
+                    <img class="w-[100px]   " src="img/h3.png" alt="">
+
+                    <div class="  mt-2.5">
+                        <span class="text-pink-400">بخاطر خودت </span>
+                        <span class="text-black/50">چون،</span>
+                        <span class="text-pink-400"> نظرت </span>
+                        <span class="text-black/50"> مهمه</span>
+                    </div>
+                </div>
+                <div class="row justify-between *:my-1">
+                    <img class="w-[130px] h-[110px] absolute right-0 " src="img/h4.jpeg" alt="">
+                    <div class=" absolute lg:w-[370px] w-[300px] py-2.5 ">
+                        <span class="text-black/50  flex justify-end text-right py-1">میسلار واتر هیدرودرم پوست چرب مدل
+                            Mattifying</span>
+                        <p class="text-black  lg:text-[15px]  text-[12px] text-right">من پوست چرب و مستعد جوش دارم،رضایت کامل داشتم.پاک
+                            کنندگی خوب و باعث سوزش چشم نشد.در تخفیف ارزش خرید دارد</p>
+                    </div>
+
+                </div>
+                <div class="absolute flex items-center bottom-0 left-0 text-black text-[18px]"> <svg
+                        class="text-pink-400 w-[49px] h-[49px]" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" fill="none" viewBox="0 0 24 24" class="h-5 w-5 text-primary-main"
+                        data-sentry-element="svg" data-sentry-component="SvgArrowSquareLeft"
+                        data-sentry-source-file="ArrowSquareLeft.tsx">
+                        <path fill="currentColor"
+                            d="M13.26 16.28c-.19 0-.38-.07-.53-.22L9.2 12.53a.754.754 0 0 1 0-1.06l3.53-3.53c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-3 3 3 3c.29.29.29.77 0 1.06a.7.7 0 0 1-.53.22"
+                            data-sentry-element="path" data-sentry-source-file="ArrowSquareLeft.tsx"></path>
+                    </svg>مشاهده</div>
+            </a>
+        </div>
+    </section>
+    <!-- end section -->
+    <section class="relative row flex-wrap">
+        <h3 class=" mx-auto px-3 text-[20px] mt-2">برند های برتر</h3>
+
+        <div
+            class="flex right-0 flex-wrap w-full *:w-[120px] *:h-[40px] md:gap-x-40 gap-y-7 py-12 mx-auto *:items-center *:hover:*:scale-110 ">
+
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c1.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c2.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c3.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c4.jpeg" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c5.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c6.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c7.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c8.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c9.png" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c10.png" alt=""></a>
+            <a href="" class="object-cover flex items-center overflow-hidden"><img src="img/c11.jpeg" alt=""></a>
+            <a href="" class=" overflow-hidden flex items-center"><img src="img/c12.png" alt=""></a>
+        </div>
+    </section>
+
+    <footer class="bg-[#F6D6D8] ">
+        <div class="row justify-center gap-x-20">
+            <div class="h-[100px] w-[300px] ">
+                <img class="h-[200px] w-[200px] mx-auto mt-5 rounded-2xl object-cover" src="img/file_00000000523471f4904d6a4d72bc7873.png" alt="">
+                <form
+                    class=" w-[150px] h-[30px] relative rounded-2xl px-2 border-pink-600 border mx-auto mt-5 bg-white flex justify-between items-center"
+                    action="">
+                    <input class="outline-0 border-0 text-pink-700 text-[15px] " placeholder="email" type="email">
+                    <button
+                        class="bg-pink-700 rounded-2xl text-white text-[15px] border border-pink-700 w-[40px] h-[30px] absolute right-0 ">send</button>
+                </form>
+
+            </div>
+            <div class="h-[300px] w-[300px] lg:mt-[0] mt-[160px] ">
+                <div class=" flex **:h-[40px] **:w-[40px] **:fill-pink-700 pink row justify-center  py-6 mt-5 gap-1.5 ">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z">
+                            </path>
+                        </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z">
+                            </path>
+                        </svg></a>
+                    <a href="https://www.instagram.com/rosha_ghaderi7?igsh=ZnhzdWNyemtpZ2Qz"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                            </path>
+                        </svg></a>
+
+                </div>
+                <div>
+                    <p class="  text-center mt-0 text-pink-700">ما را در شبکه های اجتماعی دنبال کنید</p>
+                    <p class="text-center mt-0 text-pink-800 text-[18px] py-2">روز های شنبه تا پنجشنبه از ساعت 9 الی 12
+                        پاسخگو سوالات شما هستیم</p>
+                    <p class="text-center mt-0 text-pink-800 text-[18px] ">تلفن:02191200500 - 02192005221</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

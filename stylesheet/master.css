@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .row {
+        @apply flex flex-wrap w-full
+    }
+}
+
+@layer components {
+    .btnheader {
+        @apply w-[90px] h-[40px] border border-b-fuchsia-300 rounded-[4px] text-pink-600 border-[1px] 
+    }
+    .btngray{
+        @apply h-[25px]  border border-gray-400/30 bg-[#fcfbfb] text-[#666666] text-[15px] rounded-[4px] hover:bg-pink-100
+    }
+    .btnred{
+        @apply h-[15px] w-[20px] bg-[#ec150a] text-white text-[11px] rounded-[15px] *:text-center flex justify-center
+    }
+    .underlinemenu{
+        @apply absolute  bg-gray-400/50 bottom-0 left-0 w-full h-[1px] gap-2  after:content-[''] after:bg-pink-500 duration-200  after:flex  after:w-[100%] after:h-full opacity-0
+    }
+}
+
+@layer base {
+    body{
+        font-family: rosha;
+    }
+    @font-face {
+        font-family: rosha;
+        src: url(../font/Far.Roya\ Bold.ttf);
+    }
+}
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform:scale(0px);
+      
+    }
+    50% {
+      transform:scale(20px);
+    }
+  }
+}
